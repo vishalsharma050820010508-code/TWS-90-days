@@ -34,10 +34,10 @@
 
 # 5 Commands used daily 
 - `ps`   : View running processes
-- `top`  : Monitor CPU and memory usage
-- `journalctl`  : View system logs
-- `systemctl`   : Manage services
-- `kill`    : To kill process
+- `systemctl`  : To start or stop or to view status of any service
+- `man`  : To check manual of any command
+- `vim`   : Editor to edit any file
+- `free -m`    : To check memory usage
 
 ## Why This Matters
 - For troubleshooting Linux
