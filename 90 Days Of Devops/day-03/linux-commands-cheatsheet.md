@@ -1,7 +1,6 @@
 ## Day 03 – Linux Commands  Cheatsheet
 
-<img width="1024" height="1024" alt="magnific__day-03-linux-commands-cheatsheetprocess-management__41762" src="https://github.com/user-attachments/assets/b511c6d3-497d-4e66-8045-60b7c4c3e06d" />
-
+<img width="706" height="805" alt="image" src="https://github.com/user-attachments/assets/4bc84635-288e-453a-badb-581abbab707b" />
 
 ## File & Directory Commands
 - pwd                 # Show current working directory
