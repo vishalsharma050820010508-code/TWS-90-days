@@ -3,44 +3,87 @@
 <img width="1024" height="1024" alt="magnific__day-03-linux-commands-cheatsheetprocess-management__41762" src="https://github.com/user-attachments/assets/b511c6d3-497d-4e66-8045-60b7c4c3e06d" />
 
 
+## File & Directory Commands
+- pwd                 # Show current working directory
+- ls                  # List files and folders
+- ls -la              # List all files with permissions and hidden files
+- cd /path            # Change directory
+- mkdir test          # Create a new directory
+- rmdir test          # Remove empty directory
+- touch file.txt      # Create empty file
+- cp file.txt bkp.txt # Copy file
+- mv bkp.txt new.txt  # Move or rename file
+- rm file.txt         # Delete file
+- find /home -name "*.txt"   # Find all .txt files
+
+## File Viewing & Editing
+- cat file.txt        # Display full file content
+- less file.txt       # View file page by page
+- head -5 file.txt    # Show first 5 lines
+- tail -5 file.txt    # Show last 5 lines
+- tail -f logs.txt    # Monitor file logs in real time
+- vim file.txt        # Open file in vim editor
+
+## User & Permission Commands
+- whoami              # Show current logged-in user
+- id                  # Show user ID and group details
+- sudo su             # Switch to root user
+- passwd              # Change user password
+- useradd devuser     # Create new user
+- userdel devuser     # Delete user
+- chmod 755 script.sh # Change file permissions
+- chown ubuntu:ubuntu file.txt   # Change file owner
+
 ## Process Management
+- ps -aux             # Show all running processes
+- top                 # Monitor system processes live
+- htop                # Interactive process viewer
+- kill PID            # Stop process using PID
+- kill -9 PID         # Force kill process
+- pgrep nginx         # Find PID of process
 
--   `top`         :  To monitor Cpu amd Memory usage 
--   `ps aux`      :  Show all running processes
--   `htop`        :  Interactive process viewer
--   `kill <PID>`  :  Kill a process
--   `&&`          :  It chains two commands together
+## Service Management (systemd)
+- systemctl status nginx    # Check service status
+- systemctl start nginx     # Start service
+- systemctl stop nginx      # Stop service
+- systemctl restart nginx   # Restart service
+- systemctl enable nginx    # Enable service at boot
+- journalctl -u nginx       # View service logs
 
-## File System
+## Networking Commands
+- ip a                      # Show IP address details
+- ping google.com           # Test network connectivity
+- curl google.com           # Fetch webpage data
+- wget https://example.com/file.zip   # Download file
+- netstat -tulnp            # Show open ports and services
+- ss -tulnp                 # Display listening ports
+-traceroute google.com     # Trace network route
 
--   `ls`                  :  List files 
--   `mkdir dir`           :  Create directory
--   `cd`                  :  Change directory
--   `df -h`               :  Display free disk space  
--   `pwd`                 :  Show present working directory 
--   `cp <sour> <dest >`   :  Copy files
--   `mv <sour> <dest>`    :  To move or rename files
--   `df -h`               :  Display free disk space
+## Disk & Memory Commands
+- df -h               # Show disk space usage
+- du -sh *            # Show folder sizes
+- free -m             # Display memory usage
+- lsblk               # List block storage devices
+- mount               # Show mounted filesystems
 
-## Logs & Services
+## Archive & Compression
+- tar -cvf backup.tar folder/    # Create tar archive
+- tar -xvf backup.tar            # Extract tar archive
+- gzip file.txt                  # Compress file
+- gunzip file.txt.gz             # Decompress gzip file
+- zip -r project.zip project/    # Create zip archive
+- unzip project.zip              # Extract zip file
 
--   `journalctl`          :  Check logs
--   `systemctl`           :  It  manage system services
+## Package Management (Ubuntu/Debian)
+- apt update             # Update package list
+- apt upgrade            # Upgrade installed packages
+- apt install nginx      # Install package
+- apt remove nginx       # Remove package
+- dpkg -l                # List installed packages
 
-## Networking
-
--   `ping`                :  Check network connectivity
--   `ip addr`             :  Show IP addresses
--   `curl url`            :  Test response with HTTP/API 
--   `ifconfig/ip a`       :  Display all network interfaces with IP addresses
--   `wget url`            :  Download files from internet
 
 ## Why is this Important 
 
 - Troubleshooting
 - To quickly check logs and network 
 - Useful in real production issues
-
-
-
-
